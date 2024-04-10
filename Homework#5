@@ -11,6 +11,4 @@ birth_year_ckeck = input()
 
 if birth_year_check.lower() == "true":
     print(f"Okey, then {birth_year_guess} is your mom birth year!")
-else:
-    print("Double-check your information.")
 
