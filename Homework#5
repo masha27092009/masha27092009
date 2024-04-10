@@ -1,0 +1,16 @@
+print("hi, how do you feel?")
+user_mood = input()
+print(f"It sounds great {user_mood}! what is your brother name?")
+user_name = input()
+print(f'hi, {user_name}!" what is your mom age?')
+user_age = int(input())    
+birth_year_guess = 1991 - user_age
+
+print(f"I know, you are born in year {birth_year_guess}? Let me know if it is true or false?")
+birth_year_ckeck = input()
+
+if birth_year_check.lower() == "true":
+    print(f"Okey, then {birth_year_guess} is your mom birth year!")
+else:
+    print("Double-check your information.")
+
