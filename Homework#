@@ -1,0 +1,48 @@
+class Dog:
+    name='unknown'
+
+    def __init__(self, stay, shake, sit, age):
+        self.is_do = False
+        self.shake = shake
+        self.stay = stay
+        self.sit = sit
+        self.age = age
+        self.tricks = []
+
+    def do(self, sit):
+        print('f dog {self.name} do')
+        self.is_do = True
+
+    def learn_trick(self, trick):
+        self.tricks += [trick]
+
+class DogSpike(Dog):
+        name ='Spike'
+
+        def sit(self):
+            print('f dog {self.name} is r {self.sit}')
+
+class DogMike(Dog):
+    name = 'Mike'
+
+my_dog = DogSpike(1,1,1,1)
+
+
+my_dog.learn_trick('sit')
+my_dog.learn_trick('stay')
+print(my_dog.tricks)
+# friends_dog = DogMike(1,1,1,1)
+
+# print(f'my dog name is {my_dog.name}')
+# print(f'friend sit is')
+# print(f'my friend\'s dog name is {friends_dog.name}')
+# # print(f' friend\'s dog sit is {friends_dog.speed}')
+# my_dog.sit
+
+
+
+
+
+
+
+
